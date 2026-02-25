@@ -4,7 +4,7 @@ import AccountSVG from "../ui/AccountSVG";
 export default function App() {
 	return (
 		<div className={classes.app}>
-			<headar className={classes.header}>
+			<header className={classes.header}>
 				<div className={classes.container}>
 					<div className={classes.headerBlock}>
 						<div className={classes.block}>
@@ -27,7 +27,7 @@ export default function App() {
 						</div>
 					</div>
 				</div>
-			</headar>
+			</header>
 		</div>
 	);
 }
