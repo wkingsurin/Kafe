@@ -11,8 +11,11 @@ export default function Header() {
 			<div className="container">
 				<div className={classes.headerBlock}>
 					<div className={classes.block}>
-						<Logo />
-						<CallComponent />
+						<Logo
+							imageUrl="https://storage.yandexcloud.net/static-prod-resultrest/companies/59/templates/logos/5d774853-e808-4c9b-b7f0-93aa5184546f.png"
+							name="Сели и поели"
+						/>
+						<CallComponent phone="+7 (343) 123-45-67" text="Сделать заказ" />
 					</div>
 					<div className={classes.block}>
 						<Button className="account">
