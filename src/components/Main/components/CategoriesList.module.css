@@ -1,0 +1,25 @@
+.categories {
+	display: flex;
+	justify-content: center;
+}
+.categoriesList {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+
+	font-size: 15px;
+	font-weight: 500;
+	color: #2d2d2d;
+}
+.category {
+}
+.categoryLink {
+	color: inherit;
+	font-weight: inherit;
+
+	transition: 0.1s ease-in-out;
+}
+.categoryLink:hover {
+	color: #fda340;
+}
