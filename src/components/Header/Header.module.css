@@ -1,0 +1,23 @@
+.header {
+	display: block;
+
+	box-shadow: 0 1px 15px 3px rgba(45, 45, 45, 0.1);
+	background: #fff;
+}
+
+.headerBlock {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	min-height: 100px;
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+.block:nth-child(2) {
+	gap: 20px;
+}

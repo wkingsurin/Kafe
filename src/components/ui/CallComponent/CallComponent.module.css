@@ -1,0 +1,17 @@
+.orderBlock {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+
+	color: #2d2d2d;
+	text-decoration: none;
+}
+.phone {
+	color: #2d2d2d;
+	font-weight: 600;
+}
+.text {
+	color: #fda340;
+	font-weight: 500;
+}

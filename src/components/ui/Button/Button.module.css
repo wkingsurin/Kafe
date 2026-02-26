@@ -1,0 +1,26 @@
+.account {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 50px;
+	height: 50px;
+
+	background: #fda340;
+	border-radius: 50px;
+}
+.account svg {
+	width: 30px;
+	height: 30px;
+}
+.account svg path {
+	fill: #fff;
+}
+.cart {
+	height: 50px;
+	padding: 0 30px;
+
+	color: #fff;
+	background: #fda340;
+	border-radius: 50px;
+}

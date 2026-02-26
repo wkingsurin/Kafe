@@ -1,5 +1,6 @@
 @import url("./assets/fonts.css");
 @import url("./assets/reset.css");
+@import url("./assets/common.css");
 
 :root {
 	font-family: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
