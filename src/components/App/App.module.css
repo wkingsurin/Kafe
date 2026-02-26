@@ -265,12 +265,14 @@ main {
 }
 .contentBlock {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	gap: 30px;
 }
 .titleBlock {
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
 }
 .title {
 }
@@ -379,4 +381,26 @@ main {
 .dishButton:hover {
 	color: #fff;
 	background: #fda340;
+}
+.contentButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 15px 30px;
+
+	height: 46px;
+
+	font-size: 14px;
+	color: #2d2d2d;
+	font-weight: 700;
+
+	border-radius: 14px;
+	border: 2px solid transparent;
+
+	transition: 0.1s ease-in-out;
+}
+.contentButton:hover {
+	color: #fff;
+	background: rgba(45, 45, 45);
 }

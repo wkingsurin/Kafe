@@ -264,6 +264,7 @@ export default function App() {
 									<button className={classes.dishButton}>В корзину</button>
 								</div>
 							</div>
+							<button className={classes.contentButton}>Показать все</button>
 						</div>
 					</div>
 				</section>
