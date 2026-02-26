@@ -6,7 +6,7 @@ export default function SortComponent({ options }) {
 			<span>сортировать по:</span>
 			<select name="sort-list" id="sort-list" className={classes.sortList}>
 				{options.map((option) => (
-					<option value={option.value}>{option.children}</option>
+					<option key={option.value} value={option.value}>{option.children}</option>
 				))}
 			</select>
 		</div>
