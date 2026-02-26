@@ -94,8 +94,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-
-	margin-bottom: 250px;
 }
 .hero {
 }
@@ -403,4 +401,23 @@ main {
 .contentButton:hover {
 	color: #fff;
 	background: rgba(45, 45, 45);
+}
+
+.footer {
+}
+.footerBlock {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	min-height: 100px;
+
+	padding-top: 20px;
+}
+.footerBlock a {
+	flex-direction: row;
+	gap: 20px;
+}
+.footerBlock a > *:nth-child(1) {
+	order: 1;
 }
