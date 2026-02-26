@@ -1,6 +1,7 @@
 import classes from "./HeroSection.module.css";
 import ArrowSVG from "../../ui/ArrowSVG";
 import Button from "../../ui/Button";
+import Title from "../../ui/Title";
 
 export default function HeroSection() {
 	return (
@@ -73,7 +74,7 @@ export default function HeroSection() {
 						/>
 					</div>
 					<div className={classes.carouselBlock}>
-						<h2 className={classes.title}>Популярное</h2>
+						<Title>Популярное</Title>
 						<div className={classes.carousel}>
 							<div className={classes.images}>
 								<div className={classes.item}>

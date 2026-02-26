@@ -56,12 +56,6 @@
 	flex-direction: column;
 	gap: 30px;
 }
-.title {
-	font-size: 24px;
-	font-weight: 700;
-
-	color: #2d2d2d;
-}
 .carousel {
 	position: relative;
 
