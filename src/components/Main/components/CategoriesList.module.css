@@ -12,14 +12,3 @@
 	font-weight: 500;
 	color: #2d2d2d;
 }
-.category {
-}
-.categoryLink {
-	color: inherit;
-	font-weight: inherit;
-
-	transition: 0.1s ease-in-out;
-}
-.categoryLink:hover {
-	color: #fda340;
-}
