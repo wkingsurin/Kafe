@@ -1,0 +1,29 @@
+.sortBlock {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	color: #2d2d2d;
+}
+.sortBlock span {
+}
+.sortList {
+	min-width: 140px;
+	min-height: 30px;
+
+	padding: 0 15px;
+
+	border: none;
+	outline: none;
+	background: rgba(45, 45, 45, 0.15);
+
+	cursor: pointer;
+	border-radius: 11px;
+
+	appearance: none;
+}
+.sortList::-ms-expand {
+	display: none;
+}
+.sortList option {
+}
