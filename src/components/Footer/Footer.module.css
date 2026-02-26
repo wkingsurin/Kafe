@@ -1,0 +1,18 @@
+.footer {
+}
+.footerBlock {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	min-height: 100px;
+
+	padding-top: 20px;
+}
+.footerBlock a {
+	flex-direction: row;
+	gap: 20px;
+}
+.footerBlock a > *:nth-child(1) {
+	order: 1;
+}
