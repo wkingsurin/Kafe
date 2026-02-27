@@ -12,7 +12,11 @@ export default function Main() {
 		<main className={classes.main}>
 			<HeroSection></HeroSection>
 			{dishesData.map((category) => (
-				<ContentSection id="combo" category={category}></ContentSection>
+				<ContentSection
+					key={category.category}
+					id="combo"
+					category={category}
+				></ContentSection>
 			))}
 		</main>
 	);

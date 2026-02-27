@@ -11,7 +11,7 @@ export default function CategoriesList() {
 		<div className={classes.categories}>
 			<ul className={classes.categoriesList}>
 				{tempCategories.map((category) => (
-					<Category>{category}</Category>
+					<Category key={category}>{category}</Category>
 				))}
 			</ul>
 		</div>
