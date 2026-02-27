@@ -1,7 +1,12 @@
 import classes from "./Carousel.module.css";
 
-import ArrowSVG from "../../ui/ArrowSVG";
-import Button from "../../ui/Button";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/scrollbar";
+
 import Title from "../../ui/Title";
 import CarouselItem from "./CarouselItem";
 
@@ -14,24 +19,26 @@ export default function Carousel() {
 	return (
 		<div className={classes.carouselBlock}>
 			<Title>{title}</Title>
-			<div className={classes.carousel}>
-				<div className={classes.carouselOverflow}>
-					<div className={classes.images}>
-						{mangalData.dishesList.map((dish) => (
-							<CarouselItem
-								imageUrl={dish.imageURL}
-								name={dish.name}
-							></CarouselItem>
-						))}
-					</div>
-				</div>
-				<Button className="carouselButton">
-					<ArrowSVG side="left" />
-				</Button>
-				<Button className="carouselButton">
-					<ArrowSVG />
-				</Button>
-			</div>
+			<Swiper
+				modules={[Pagination, Autoplay]}
+				spaceBetween={15}
+				slidesPerView={5}
+				autoplay={{
+					delay: 3500,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true,
+				}}
+				loop={true}
+			>
+				{mangalData.dishesList.map((dish) => (
+					<SwiperSlide key={dish.name}>
+						<CarouselItem
+							imageUrl={dish.imageURL}
+							name={dish.name}
+						></CarouselItem>
+					</SwiperSlide>
+				))}
+			</Swiper>
 		</div>
 	);
 }

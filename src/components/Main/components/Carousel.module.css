@@ -1,7 +1,7 @@
 .carouselBlock {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
+}
+.carouselBlock > *:not(:last-child) {
+	margin-bottom: 30px;
 }
 .carousel {
 	position: relative;
