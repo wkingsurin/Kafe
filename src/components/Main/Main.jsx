@@ -14,7 +14,7 @@ export default function Main() {
 			{dishesData.map((category) => (
 				<ContentSection
 					key={category.category}
-					id="combo"
+					id={category.id}
 					category={category}
 				></ContentSection>
 			))}
