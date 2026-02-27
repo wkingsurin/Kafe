@@ -23,7 +23,8 @@
         "weight": "1976 г.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/images/8c4a4a73-d427-43f2-8894-f5aba20c918a-400.jpg"
       }
-    ]
+    ],
+    "id": "combo"
   },
   {
     "category": "Блюда с мангала",
@@ -77,7 +78,8 @@
         "weight": "200 г.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/7f2c9316-9011-481e-ae1b-4869eda95780/images/07f85293-3ca0-4016-a44c-ac898708360e-400.jpg"
       }
-    ]
+    ],
+    "id": "mangal"
   },
   {
     "category": "Наборы",
@@ -166,7 +168,8 @@
         "weight": "1600 г.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/images/c4adc8e6-393b-4f42-a0f6-6f420bcc3cfe-400.jpg"
       }
-    ]
+    ],
+    "id": "sets"
   },
   {
     "category": "Хачапури / Пицца / Лаваш",
@@ -192,7 +195,8 @@
         "weight": "",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/images/6538ce64-dbfb-4a9a-b130-4fb64b210213-400.jpg"
       }
-    ]
+    ],
+    "id": "pizza"
   },
   {
     "category": "Детское меню",
@@ -204,7 +208,8 @@
         "weight": "205 г.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/f35123c1-9379-4700-b116-f519bf68e60f/images/0f42d162-e7e8-41e6-95c6-8dedc9dfb111-400.jpg"
       }
-    ]
+    ],
+    "id": "child"
   },
   {
     "category": "Гарниры",
@@ -251,7 +256,8 @@
         "weight": "200 г.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/a4f9881b-35ab-4415-99c3-d78a3ed015a5/images/64dc335c-ef06-4e9e-853e-5449c991d8e4-400.jpg"
       }
-    ]
+    ],
+    "id": "garnish"
   },
   {
     "category": "Супы",
@@ -277,7 +283,8 @@
         "weight": "250 г.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/images/03f1a786-6158-4526-a4bf-73a7b95db37c-400.jpg"
       }
-    ]
+    ],
+    "id": "soups"
   },
   {
     "category": "Салаты",
@@ -310,7 +317,8 @@
         "weight": "200 г.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/images/0ced8c65-0c99-4197-acba-9ccd9e452312-400.jpg"
       }
-    ]
+    ],
+    "id": "salads"
   },
   {
     "category": "Десерты",
@@ -322,7 +330,8 @@
         "weight": "",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/bb0e6670-8d3a-4f0f-b2ac-aeb789d55e11/images/648ba5f1-478c-4a94-8121-e15f8354f82c-400.jpg"
       }
-    ]
+    ],
+    "id": "deserts"
   },
   {
     "category": "Напитки",
@@ -355,7 +364,8 @@
         "weight": "1 л.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/011a554a-d457-42fc-9d1b-58b02a1bb388/images/1a748021-7bb9-4585-85b3-70974cc9233e-400.jpg"
       }
-    ]
+    ],
+    "id": "drinks"
   },
   {
     "category": "Соусы",
@@ -381,6 +391,7 @@
         "weight": "100 г.",
         "imageURL": "https://storage.yandexcloud.net/static-prod-resultrest/goods/da781e6d-181d-442f-9433-a119f11c7815/images/e995fab4-0d55-4d33-b8f2-2ef5a34da9cd-400.jpg"
       }
-    ]
+    ],
+    "id": "sauses"
   }
 ]
