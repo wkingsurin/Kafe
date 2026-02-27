@@ -29,6 +29,7 @@ export default function Carousel() {
 					pauseOnMouseEnter: true,
 				}}
 				loop={true}
+				className={classes.swiper}
 			>
 				{mangalData.dishesList.map((dish) => (
 					<SwiperSlide key={dish.name}>
