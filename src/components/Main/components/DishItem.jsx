@@ -12,10 +12,15 @@ export default function DishItem(props) {
 				<a href="#" className={classes.name}>
 					{name}
 				</a>
-				<hr />
-				<div className={classes.description}>
-					<p className={classes.weight}>{weight}</p>
-					<p className={classes.price}>{price}</p>
+				<div className={classes.descriptionWrapper}>
+					<hr />
+					<div className={classes.description}>
+						<p className={classes.weight}>{weight}</p>
+						<div className={classes.priceBlock}>
+							<span className={classes.priceOutdated}>{price}</span>
+							<span className={classes.price}>{price}</span>
+						</div>
+					</div>
 				</div>
 			</div>
 			<button className={classes.dishButton}>В корзину</button>
