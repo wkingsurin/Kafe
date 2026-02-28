@@ -89,17 +89,3 @@
 	content: "";
 	background: hwb(0 0% 0%);
 }
-.dishButton {
-	padding: 13px 0;
-	border: 2px solid #fda340;
-	border-radius: 14px;
-
-	color: #fda340;
-	background: transparent;
-
-	transition: 0.1s ease-in-out;
-}
-.dishButton:hover {
-	color: #fff;
-	background: #fda340;
-}

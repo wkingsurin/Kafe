@@ -1,5 +1,7 @@
 import classes from "./DishItem.module.css";
 
+import Button from "../../ui/Button";
+
 export default function DishItem(props) {
 	const { imageUrl, name, weight, price } = props;
 
@@ -23,7 +25,7 @@ export default function DishItem(props) {
 					</div>
 				</div>
 			</div>
-			<button className={classes.dishButton}>В корзину</button>
+			<Button className={"dishButton"}>В корзину</Button>
 		</div>
 	);
 }
