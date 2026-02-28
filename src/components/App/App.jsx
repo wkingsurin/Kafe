@@ -8,6 +8,7 @@ import Header from "../Header";
 import Main from "../Main";
 import Footer from "../Footer";
 import Overlay from "../ui/Overlay";
+import LoginModal from "../LoginModal";
 
 import { preventScrollJump } from "../../utils";
 
@@ -26,7 +27,9 @@ export default function App() {
 			<Header />
 			<Main />
 			<Footer />
-			<Overlay open={overlay.open} onClick={onHideOverlay} />
+			<Overlay open={overlay.open} onClick={onHideOverlay}>
+				<LoginModal></LoginModal>
+			</Overlay>
 		</div>
 	);
 }

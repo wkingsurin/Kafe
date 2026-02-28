@@ -1,6 +1,6 @@
 import classes from "./Overlay.module.css";
 
-export default function Overlay({ open, onClick }) {
+export default function Overlay({ open, onClick, children }) {
 	return open ? (
 		<div
 			className={classes.overlay}
@@ -10,7 +10,7 @@ export default function Overlay({ open, onClick }) {
 				onClick();
 			}}
 		>
-			<h2 onClick={(e) => e.stopPropagation(e)}>Content</h2>
+			{children}
 		</div>
 	) : (
 		<></>
