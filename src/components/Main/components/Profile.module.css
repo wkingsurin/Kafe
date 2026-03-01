@@ -1,0 +1,73 @@
+.profile {
+	flex: 1 1;
+}
+.profileBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.profileBlock > *:first-child {
+	height: 100%;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	height: 100%;
+
+	padding: 20px 25px;
+	background: #fff;
+	border-radius: 24px;
+
+	color: #2d2d2d;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.colContent {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+.security {
+	cursor: pointer;
+}
+
+.textBlock {
+	display: flex;
+	align-items: flex-start;
+	gap: 70px;
+}
+.property {
+	flex: 1 1 0;
+	max-width: 150px;
+
+	font-weight: 500;
+	color: rgba(45, 45, 45, 0.75);
+}
+.pass {
+	color: #ff1f1f;
+}
+
+.valueBlock {
+	flex: 1 1 0;
+
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.value {
+	font-size: 18px;
+	font-weight: 500;
+	color: inherit;
+}
+.edit {
+	font-size: 12px;
+	color: rgba(45, 45, 45, 0.5);
+	cursor: pointer;
+}
