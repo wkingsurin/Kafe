@@ -4,9 +4,10 @@
 }
 .categoriesList {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 10px;
+
+	padding: 0 11px;
 
 	font-size: 15px;
 	font-weight: 500;
