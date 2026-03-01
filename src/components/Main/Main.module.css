@@ -1,7 +1,12 @@
 main {
 	display: flex;
 	flex-direction: column;
+
+	height: 100%;
 }
-main >* {
+main > * {
 	padding: 15px 0;
+}
+.categoryList {
+	padding-top: 30px;
 }
