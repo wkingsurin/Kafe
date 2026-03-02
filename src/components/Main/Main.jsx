@@ -8,9 +8,10 @@ import ContentSection from "./components/ContentSection";
 import data from "../../data.json";
 import CategoriesList from "./components/CategoriesList";
 import Profile from "./components/Profile";
+import Basket from "./components/Basket";
 
 export default function Main() {
-	const [mainTab, setMainTab] = useState("profile");
+	const [mainTab, setMainTab] = useState("basket");
 	const dishesData = data;
 
 	const main = (
@@ -37,11 +38,24 @@ export default function Main() {
 			<Profile></Profile>
 		</>
 	);
+	const basket = (
+		<>
+			<section className={classes.categoryList}>
+				<div className="container">
+					<CategoriesList
+						options={{ type: "profile", list: ["Главная", "Корзина"] }}
+					></CategoriesList>
+				</div>
+			</section>
+			<Basket></Basket>
+		</>
+	);
 
 	return (
 		<main className={classes.main}>
 			{mainTab === "main" && main}
 			{mainTab === "profile" && profile}
+			{mainTab === "basket" && basket}
 		</main>
 	);
 }
