@@ -24,8 +24,8 @@ export default function App() {
 	}, []);
 
 	return (
-		<div className={classes.app} onClick={() => onShowOverlay(DishModal)}>
-			<Header />
+		<div className={classes.app}>
+			<Header onShowOverlay={onShowOverlay} />
 			<Main />
 			<Footer />
 			<Overlay open={overlay.open} onClick={onHideOverlay}>
