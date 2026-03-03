@@ -5,7 +5,18 @@ import Logo from "../ui/Logo";
 import CallComponent from "../ui/CallComponent";
 import Button from "../ui/Button";
 
-export default function Header() {
+export default function Header({ onShowOverlay }) {
+	const onClick = (e) => {
+		const button = e.target.closest("button");
+
+		if (!button) return;
+
+		if (button.className.includes("account")) {
+			onShowOverlay("signModal");
+		}
+		return;
+	};
+
 	return (
 		<header className={classes.header}>
 			<div className="container">
@@ -17,7 +28,7 @@ export default function Header() {
 						/>
 						<CallComponent phone="+7 (343) 123-45-67" text="Сделать заказ" />
 					</div>
-					<div className={classes.block}>
+					<div className={classes.block} onClick={onClick}>
 						<Button className="account">
 							<AccountSVG />
 						</Button>
