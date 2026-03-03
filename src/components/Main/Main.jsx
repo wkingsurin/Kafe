@@ -11,7 +11,7 @@ import Profile from "./components/Profile";
 import Basket from "./components/Basket";
 
 export default function Main() {
-	const [mainTab, setMainTab] = useState("basket");
+	const [mainTab, setMainTab] = useState("main");
 	const dishesData = data;
 
 	const main = (
