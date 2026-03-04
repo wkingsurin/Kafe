@@ -36,6 +36,7 @@ export default function DishModal(props) {
 								value={1}
 								name="count"
 								id="count"
+								onChange={() => {}}
 							/>
 							<Button styles={{ width: "44px", height: "100%" }}>
 								<PlusSVG />
