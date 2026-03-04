@@ -12,6 +12,7 @@ export default function DishesComponent({dishes}) {
 					name={dish.name}
 					weight={dish.weight}
 					price={dish.price}
+					description={dish.description}
 				></DishItem>
 			))}
 		</div>

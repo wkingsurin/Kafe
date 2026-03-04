@@ -11,12 +11,21 @@ import Overlay from "../ui/Overlay";
 import LoginModal from "../LoginModal";
 import DishModal from "../DishModal";
 
+import { OverlayContext } from "../../contexts/OverlayContext";
+
 import { preventScrollJump } from "../../utils";
 
 export default function App() {
 	const { overlay, onShowOverlay, onHideOverlay } = useOverlay({
 		content: "dishModal",
 		open: false,
+		contentData: {
+			name: null,
+			imageURL: null,
+			weight: null,
+			description: null,
+			price: null,
+		},
 	});
 
 	useEffect(() => {
@@ -25,17 +34,21 @@ export default function App() {
 
 	return (
 		<div className={classes.app}>
-			<Header onShowOverlay={onShowOverlay} />
-			<Main />
-			<Footer />
+			<OverlayContext.Provider
+				value={{ overlay, onShowOverlay, onHideOverlay }}
+			>
+				<Header onShowOverlay={onShowOverlay} />
+				<Main />
+				<Footer />
+			</OverlayContext.Provider>
 			<Overlay open={overlay.open} onClick={onHideOverlay}>
 				{overlay.content === "dishModal" && (
 					<DishModal
-						imgURL="https://storage.yandexcloud.net/static-prod-resultrest/goods/images/81cf8a75-34cb-4e55-91a7-bb0e4719a2db-400.jpg"
-						name="Комбо номер 2"
-						weight="806 г."
-						description="Состав: Плов с курицей 250 гр, Борщ 250 гр, Булочка 1 шт., Лук маринованный 50 гр, Соус красный 30 гр. Морс в подарок."
-						price="539 ₽"
+						imgURL={overlay?.contentData?.imageURL}
+						name={overlay?.contentData?.name}
+						weight={overlay?.contentData?.weight}
+						description={overlay?.contentData?.description}
+						price={overlay?.contentData?.price}
 					></DishModal>
 				)}
 				{overlay.content === "signModal" && <LoginModal></LoginModal>}

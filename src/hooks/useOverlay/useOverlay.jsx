@@ -4,9 +4,9 @@ import { preventScrollJump } from "../../utils";
 export default function useOverlay(initialValue) {
 	const [state, setState] = useState(initialValue);
 
-	const onShowOverlay = (content) => {
+	const onShowOverlay = (content, contentData) => {
 		preventScrollJump("add");
-		setContent(content);
+		setContent(content, contentData);
 		openOverlay();
 	};
 
@@ -23,11 +23,21 @@ export default function useOverlay(initialValue) {
 		setState((o) => ({ ...o, open: false }));
 	};
 
-	const setContent = (content) => {
-		setState((o) => ({ ...o, content: content }));
+	const setContent = (content, contentData) => {
+		setState((o) => ({ ...o, content: content, contentData }));
 	};
 	const clearContent = () => {
-		setState((o) => ({ ...o, content: null }));
+		setState((o) => ({
+			...o,
+			content: null,
+			contentData: {
+				imgURL: null,
+				name: null,
+				wieght: null,
+				description: null,
+				price: null,
+			},
+		}));
 	};
 
 	return { overlay: state, onShowOverlay, onHideOverlay };

@@ -1,9 +1,12 @@
 import classes from "./DishItem.module.css";
 
+import { useContext } from "react";
+import { OverlayContext } from "../../../contexts/OverlayContext";
 import Button from "../../ui/Button";
 
 export default function DishItem(props) {
-	const { imageUrl, name, weight, price } = props;
+	const { onShowOverlay } = useContext(OverlayContext);
+	const { imageUrl, name, weight, price, description } = props;
 
 	return (
 		<div className={classes.dishItem}>
@@ -11,7 +14,14 @@ export default function DishItem(props) {
 				<img src={imageUrl} alt={name} />
 			</div>
 			<div className={classes.descriptionBlock}>
-				<a href="#" className={classes.name}>
+				<a
+					href="#"
+					className={classes.name}
+					onClick={(e) => {
+						e.preventDefault();
+						onShowOverlay("dishModal", {imageURL: imageUrl, name, weight, price, description });
+					}}
+				>
 					{name}
 				</a>
 				<div className={classes.descriptionWrapper}>
