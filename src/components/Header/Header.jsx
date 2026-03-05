@@ -5,7 +5,7 @@ import Logo from "../ui/Logo";
 import CallComponent from "../ui/CallComponent";
 import Button from "../ui/Button";
 
-export default function Header({ onShowOverlay }) {
+export default function Header({ onShowOverlay, onSwitchTab }) {
 	const onClick = (e) => {
 		const button = e.target.closest("button");
 
@@ -32,7 +32,7 @@ export default function Header({ onShowOverlay }) {
 						<Button className="account">
 							<AccountSVG />
 						</Button>
-						<Button className="cart">Корзина</Button>
+						<Button className="cart" onClick={onSwitchTab}>Корзина</Button>
 					</div>
 				</div>
 			</div>

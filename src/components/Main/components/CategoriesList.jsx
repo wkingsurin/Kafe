@@ -4,7 +4,7 @@ import Category from "./Category";
 
 import data from "../../../data.json";
 
-export default function CategoriesList({ options = {} }) {
+export default function CategoriesList({ options = {}, onSwitchTab }) {
 	const { type = "default", list } = options;
 
 	if (type === "default") {
@@ -24,10 +24,15 @@ export default function CategoriesList({ options = {} }) {
 	}
 	if (type === "profile") {
 		return (
-			<div className={classes.categories} style={{justifyContent: 'flex-start'}}>
+			<div
+				className={classes.categories}
+				style={{ justifyContent: "flex-start" }}
+			>
 				<ul className={classes.categoriesList}>
 					{list.map((l) => (
-						<Category key={l}>{l}</Category>
+						<Category key={l} onSwitchTab={onSwitchTab}>
+							{l}
+						</Category>
 					))}
 				</ul>
 			</div>

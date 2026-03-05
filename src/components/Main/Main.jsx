@@ -1,19 +1,13 @@
 import classes from "./Main.module.css";
 
-import { useState } from "react";
-
 import HeroSection from "./components/HeroSection";
 import ContentSection from "./components/ContentSection";
 
-import data from "../../data.json";
 import CategoriesList from "./components/CategoriesList";
 import Profile from "./components/Profile";
 import Basket from "./components/Basket";
 
-export default function Main() {
-	const [mainTab, setMainTab] = useState("main");
-	const dishesData = data;
-
+export default function Main({ mainTab, dishesData, onSwitchTab }) {
 	const main = (
 		<>
 			<HeroSection></HeroSection>
@@ -32,6 +26,7 @@ export default function Main() {
 				<div className="container">
 					<CategoriesList
 						options={{ type: "profile", list: ["Главная", "Профиль"] }}
+						onSwitchTab={onSwitchTab}
 					></CategoriesList>
 				</div>
 			</section>
@@ -44,6 +39,7 @@ export default function Main() {
 				<div className="container">
 					<CategoriesList
 						options={{ type: "profile", list: ["Главная", "Корзина"] }}
+						onSwitchTab={onSwitchTab}
 					></CategoriesList>
 				</div>
 			</section>

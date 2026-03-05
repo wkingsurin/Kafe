@@ -1,7 +1,6 @@
 import classes from "./App.module.css";
-import ArrowSVG from "../ui/ArrowSVG";
 
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import useOverlay from "../../hooks/useOverlay";
 
 import Header from "../Header";
@@ -14,6 +13,7 @@ import DishModal from "../DishModal";
 import { OverlayContext } from "../../contexts/OverlayContext";
 
 import { preventScrollJump } from "../../utils";
+import data from "../../data.json";
 
 export default function App() {
 	const { overlay, onShowOverlay, onHideOverlay } = useOverlay({
@@ -28,6 +28,13 @@ export default function App() {
 		},
 	});
 
+	const [mainTab, setMainTab] = useState("basket");
+	const dishesData = data;
+
+	const onSwitchTab = (tabName) => {
+		setMainTab(() => tabName);
+	};
+
 	useEffect(() => {
 		preventScrollJump("load");
 	}, []);
@@ -37,8 +44,12 @@ export default function App() {
 			<OverlayContext.Provider
 				value={{ overlay, onShowOverlay, onHideOverlay }}
 			>
-				<Header onShowOverlay={onShowOverlay} />
-				<Main />
+				<Header onShowOverlay={onShowOverlay} onSwitchTab={onSwitchTab} />
+				<Main
+					mainTab={mainTab}
+					onSwitchTab={onSwitchTab}
+					dishesData={dishesData}
+				/>
 				<Footer />
 			</OverlayContext.Provider>
 			<Overlay open={overlay.open} onClick={onHideOverlay}>
